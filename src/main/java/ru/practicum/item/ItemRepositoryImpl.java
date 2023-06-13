@@ -1,11 +1,12 @@
 package ru.practicum.item;
 
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Repository
+@Component
 public class ItemRepositoryImpl implements ItemRepository {
     private List<Item> listItems = new ArrayList<>();
     private long nextIdItem = 0;
